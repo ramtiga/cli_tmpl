@@ -1,5 +1,7 @@
 # coding: utf-8
 
+require "fileutils"
+
 module CreateTmpl
   extend self
   
@@ -16,10 +18,10 @@ module CreateTmpl
   end
 
   def create_dir
-    system "mkdir #{@name}"
-    system "mkdir -p ./#{@name}/bin"
-    system "mkdir -p ./#{@name}/lib"
-    system "mkdir -p ./#{@name}/lib/#{@name}"
+    FileUtils.mkdir_p("#{@name}")
+    FileUtils.mkdir_p("./#{@name}/bin")
+    FileUtils.mkdir_p("./#{@name}/lib")
+    FileUtils.mkdir_p("./#{@name}/lib/#{@name}")
   end
 
   def create_rootfile
@@ -68,7 +70,7 @@ BATCH
   end
   
   def chmod_batch
-    system "chmod a+x ./#{@name}/bin/#{@name}"
+    FileUtils.chmod(0755, "./#{@name}/bin/#{@name}")
   end
   
   def create_lib
