@@ -1,4 +1,4 @@
-# <%= name.camelize %>
+# App Name
 
 * 
 * 
@@ -11,7 +11,7 @@
 
 ## Usage
 
-    $ ./bin/<%= name.camelize %>
+    $ ./bin/[app name]
 
 
 
