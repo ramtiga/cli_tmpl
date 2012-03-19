@@ -1,0 +1,4 @@
+module <%= name.camelize %>
+  VERSION = "0.0.1"
+end
+

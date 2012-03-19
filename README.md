@@ -11,7 +11,7 @@
 
 ## Usage
 
-    $ ruby cli_tmpl.rb sample
+    $ ./bin/cli_tmpl sample
     $ cd sample
     $ tree
     .
