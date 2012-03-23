@@ -11,7 +11,11 @@
 
 ## Usage
 
-    $ ./bin/cli_tmpl sample
+    $ ./bin/cli_tmpl -h
+    Usage:
+      cli_tmpl [app_name] [path]
+
+    $ ./bin/cli_tmpl sample ./
     $ cd sample
     $ tree
     .
